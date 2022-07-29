@@ -1,0 +1,40 @@
+body {
+  display: grid;
+}
+
+.react-terminal-wrapper {
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  overflow: hidden;
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #c8c8c8;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.react-terminal-wrapper::after {
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+    0deg,
+    black,
+    black 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+.react-terminal-line {
+  white-space: break-spaces;
+}
+
+li {
+  list-style-type: disclosure-closed;
+}
+::selection {
+  background: #0080ff;
+  text-shadow: none;
+}
